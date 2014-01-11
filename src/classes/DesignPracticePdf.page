@@ -1,0 +1,195 @@
+<apex:page showHeader="false" sidebar="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0" readOnly="true" renderAs="pdf" id="page">
+    <head>
+        <style type="text/css">
+            body {
+                font-family: Arial Unicode MS;
+                font-size:8pt
+            }
+            
+            @page {
+                size: A4;
+            }
+            
+            #page {
+                width: 600px;
+                margin: 0 auto;
+                background-color: #ADB367;
+            }
+            .articleDetailHead {
+                text-align:center;
+                vertical-align: center;
+                padding: 10px;
+                margin-bottom: 30px;
+            }
+            
+            .articleDetailBody {
+                padding: 10px;
+            }
+            
+            .articleDetailFoot {
+                text-align:center;
+                vertical-align: center;
+                padding: 10px;
+                margin-top: 30px;
+            }
+            
+            #pageBodyMain {
+                border: 1px solid #C0D136;
+                background-color: #C0D136;
+                width: 60%;
+                float: left;
+            }
+            
+            #pageBodySub {
+                border: 1px solid #C0D136;
+                background-color: #C0D136;
+                width: 35%;
+                float: right;
+            }
+            
+            #pageBody:after {
+                content: "";
+                clear: both;
+                display: block;
+            }
+            
+            .divBox {
+                border: 1px solid #D1E08A;
+                border-radius: 10px;
+                background-color: #D1E08A;
+                margin: 10px;
+                padding: 5px;
+            }
+            
+            .bodyTitle {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <apex:form id="form">
+            <div id="page">
+                <article class="articleDetail">
+                    <section class="articleDetailHead">
+                        <header id="pageHead">
+                            <p><apex:outputText value="Header" /></p>
+                        </header>
+                    </section>
+                    <section class="articleDetailBody">
+                        <div id="pageBody">
+                            <div class="bodyTitle">
+                                <p><apex:outputText value="Body" /></p>
+                            </div>
+                            <div id="pageBodyMain">
+                                <div class="divBox">
+                                    <apex:outputText value="pageBodyMain1" />
+                                    <ul>
+                                        <li><apex:outputText value="xxx" /></li>
+                                        <li><apex:outputText value="xxx" /></li>
+                                        <li><apex:outputText value="xxx" /></li>
+                                        <li><apex:outputText value="xxx" /></li>
+                                        <li><apex:outputText value="xxx" /></li>
+                                    </ul>
+                                </div>
+                                <div class="divBox">
+                                    <apex:outputText value="pageBodyMain2" />
+                                    <ul>
+                                        <li><apex:outputText value="xxx" /></li>
+                                        <li><apex:outputText value="xxx" /></li>
+                                        <li><apex:outputText value="xxx" /></li>
+                                        <li><apex:outputText value="xxx" /></li>
+                                        <li><apex:outputText value="xxx" /></li>
+                                    </ul>
+                                </div>
+                                <div class="divBox">
+                                    <apex:outputText value="pageBodyMain3" />
+                                    <ul>
+                                        <li><apex:outputText value="xxx" /></li>
+                                        <li><apex:outputText value="xxx" /></li>
+                                        <li><apex:outputText value="xxx" /></li>
+                                        <li><apex:outputText value="xxx" /></li>
+                                        <li><apex:outputText value="xxx" /></li>
+                                    </ul>
+                                </div>
+                                <div class="divBox">
+                                    <apex:outputText value="pageBodyMain4" />
+                                    <ul>
+                                        <li><apex:outputText value="xxx" /></li>
+                                        <li><apex:outputText value="xxx" /></li>
+                                        <li><apex:outputText value="xxx" /></li>
+                                        <li><apex:outputText value="xxx" /></li>
+                                        <li><apex:outputText value="xxx" /></li>
+                                    </ul>
+                                </div>
+                                <div class="divBox">
+                                    <apex:outputText value="pageBodyMain5" />
+                                    <ul>
+                                        <li><apex:outputText value="xxx" /></li>
+                                        <li><apex:outputText value="xxx" /></li>
+                                        <li><apex:outputText value="xxx" /></li>
+                                        <li><apex:outputText value="xxx" /></li>
+                                        <li><apex:outputText value="xxx" /></li>
+                                    </ul>
+                                </div>
+                                <div class="divBox">
+                                    <apex:outputText value="pageBodyMain6" />
+                                    <ul>
+                                        <li><apex:outputText value="xxx" /></li>
+                                        <li><apex:outputText value="xxx" /></li>
+                                        <li><apex:outputText value="xxx" /></li>
+                                        <li><apex:outputText value="xxx" /></li>
+                                        <li><apex:outputText value="xxx" /></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div id="pageBodySub">
+                                <div class="divBox">
+                                    <apex:outputText value="pageBodySub1" />
+                                    <ul>
+                                        <li><apex:outputText value="xxx" /></li>
+                                        <li><apex:outputText value="xxx" /></li>
+                                        <li><apex:outputText value="xxx" /></li>
+                                        <li><apex:outputText value="xxx" /></li>
+                                        <li><apex:outputText value="xxx" /></li>
+                                    </ul>
+                                </div>
+                                <div class="divBox">
+                                    <apex:outputText value="pageBodySub2" />
+                                    <ul>
+                                        <li><apex:outputText value="xxx" /></li>
+                                        <li><apex:outputText value="xxx" /></li>
+                                        <li><apex:outputText value="xxx" /></li>
+                                        <li><apex:outputText value="xxx" /></li>
+                                        <li><apex:outputText value="xxx" /></li>
+                                    </ul>
+                                </div>
+                                <div class="divBox">
+                                    <apex:outputText value="pageBodySub3" />
+                                    <ul>
+                                        <li><apex:outputText value="xxx" /></li>
+                                        <li><apex:outputText value="xxx" /></li>
+                                        <li><apex:outputText value="xxx" /></li>
+                                        <li><apex:outputText value="xxx" /></li>
+                                        <li><apex:outputText value="xxx" /></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="articleDetailFoot">
+                        <footer id="pageFoot">
+                            <p id="copyright">
+                                <small>
+                                    <apex:outputText value="Copyright" />
+                                    &copy;
+                                    <apex:outputText value=" " />
+                                    <apex:outputText value="2014 Force.com developer All Rights Reserved." />
+                                </small>
+                            </p>
+                        </footer>
+                    </section>
+                </article>
+            </div>
+        </apex:form>
+    </body>
+</apex:page>
